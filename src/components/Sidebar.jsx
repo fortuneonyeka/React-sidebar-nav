@@ -1,8 +1,31 @@
 import React from 'react'
+import styled from "styled-components"
+import { Link } from "react-router-dom"
+import * as FaIcon from "react-icons/fa"
+import * as AiIcon from "react-icons/ai"
+
+
+const Nav = styled.div`
+background:var(--color-bg);
+height: var(--height);
+display:flex;
+justify-content:flex-start;
+align-items:center
+`
+
+const NavIcon = styled(Link)`
+margin-left: 2rem;
+`
 
 const Sidebar = () => {
   return (
-    <div>Sidebar</div>
+    <>
+  <Nav>
+    <NavIcon to="#">
+    <FaIcon.FaBars />
+    </NavIcon>
+  </Nav>
+    </>
   )
 }
 
