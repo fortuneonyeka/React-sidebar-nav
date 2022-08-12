@@ -15,6 +15,11 @@ align-items:center
 
 const NavIcon = styled(Link)`
 margin-left: 2rem;
+font-size:rem;
+height:80px;
+display:flex;
+justify-content:flex-start;
+alig-items:center
 `
 
 const Sidebar = () => {
