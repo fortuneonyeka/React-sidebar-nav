@@ -10,7 +10,7 @@ background:var(--color-bg);
 height: var(--height);
 display:flex;
 justify-content:flex-start;
-align-items:center
+align-items:center;
 `
 
 const NavIcon = styled(Link)`
@@ -19,7 +19,17 @@ font-size:rem;
 height:80px;
 display:flex;
 justify-content:flex-start;
-alig-items:center
+alig-items:center;
+`
+
+const sidebarNav = styled.nav`
+background:var(--color-bg);
+width:250px;
+height:100vh;
+`
+
+const SidebarWrap = styled.div`
+width:100%;
 `
 
 const Sidebar = () => {
@@ -29,6 +39,13 @@ const Sidebar = () => {
     <NavIcon to="#">
     <FaIcon.FaBars />
     </NavIcon>
+    <sidebarNav>
+      <SidebarWrap>
+      <NavIcon to="#">
+    <AiIcon.AiOutlineClose />
+    </NavIcon>
+      </SidebarWrap>
+    </sidebarNav>
   </Nav>
     </>
   )
