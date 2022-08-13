@@ -5,7 +5,7 @@ import * as FaIcon from "react-icons/fa";
 import * as AiIcon from "react-icons/ai";
 
 const Nav = styled.div`
-  background: var(--color-bg);
+  // background: var(--color-bg);
   height: var(--height);
   display: flex;
   justify-content: flex-start;
