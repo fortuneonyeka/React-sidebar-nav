@@ -22,7 +22,7 @@ export const SidebarData = [
       {
         title: "Ratings",
         path: "/overview/ratings",
-        icon: <FaIcon.FcRating/>,
+        icon: <FcIcon.FcRating/>,
       },
     ]
   },
