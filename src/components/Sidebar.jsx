@@ -5,9 +5,10 @@ import * as FaIcon from "react-icons/fa";
 import * as AiIcon from "react-icons/ai";
 import {SidebarData} from "../sidebarData/SidebarData"
 import SubMenu from "./SubMenu";
+import { IconContext } from "react-icons";
 
 const Nav = styled.div`
-  // background: var(--color-bg);
+  background: var(--color-bg);
   height: var(--height);
   display: flex;
   justify-content: flex-start;
@@ -21,6 +22,7 @@ const NavIcon = styled(Link)`
   display: flex;
   justify-content: flex-start;
   alig-items: center;
+  margin-top:3rem;
 `;
 
 const SidebarNav = styled.nav`
@@ -45,6 +47,7 @@ const Sidebar = () => {
   const showSidebar = () => setSideBar(!sidebar);
   return (
     <>
+    <IconContext.Provider value={{color:"var(--color-gold)"}}>
       <Nav>
         <NavIcon to="#">
           <FaIcon.FaBars onClick={showSidebar}/>
@@ -60,6 +63,7 @@ const Sidebar = () => {
           })}
         </SidebarWrap>
       </SidebarNav>
+      </IconContext.Provider>
     </>
   );
 };
