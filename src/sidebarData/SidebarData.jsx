@@ -80,6 +80,11 @@ export const SidebarData = [
         path: "/messages/message2",
         icon: <IoIcon.IoIosPaper />
       },
+      {
+        title: "Message 3",
+        path: "/messages/message3",
+        icon: <IoIcon.IoIosPaper />
+      },
     ]
   },
   {
