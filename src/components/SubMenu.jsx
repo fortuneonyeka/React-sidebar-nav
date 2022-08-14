@@ -15,8 +15,8 @@ text-decoration:none;
 font-size:20px;
 
 &:hover {
-  background: #252831;
-  border-left: 5px solid #00FF00;
+  background: var(--color-sidebarlink);
+  border-left: 5px solid var(--color-sidebarborder);
   border-radius: 15px;
   cursor:pointer;
 }
@@ -33,13 +33,14 @@ padding:3rem;
 display:flex;
 align-items:center;
 text-decoration:none;
-color:#f5f5f5;
+color:var(--color-sidebarborder);
 font-size:18px;
 
 &:hover {
   background:#632ce4;
-  border-right: 5px solid #00FF00;
+  border-right: 5px solid var(--color-sidebarborder);
   border-radius: 15px;
+  cursor:pointer;
 }
 `
 
