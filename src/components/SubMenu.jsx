@@ -26,6 +26,23 @@ const SidebarLabel =  styled.span`
 margin-left: 16px;
 `;
 
+const DropdownLink = styled(Link)`
+background: #414757;
+height:60px;
+padding:3rem;
+display:flex;
+align-items:center;
+text-decoration:none;
+color:#f5f5f5;
+font-size:18px;
+
+&:hover {
+  background:#632ce4;
+  border-right: 5px solid #00FF00;
+  border-radius: 15px;
+}
+`
+
 const SubMenu = ({item}) => {
   const [subnav, setSubnav] = useState(false)
 
@@ -43,6 +60,14 @@ const SubMenu = ({item}) => {
         {item.subNav && subnav ? item.iconOpened : item.subNav ? item.iconClosed : null}
       </div>
       </SidebarLink>
+      {subnav && item.subNav.map((item, index) => {
+        return(
+          <DropdownLink to={item.path} key={index}>
+            {item.icon}
+            <SidebarLabel>{item.title}</SidebarLabel>
+          </DropdownLink>
+        )
+      })}
     </div>
   )
 }
