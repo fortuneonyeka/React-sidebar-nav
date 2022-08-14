@@ -1,4 +1,7 @@
 :root {
   --color-bg: #15171c;
-  --height: 80px
+  --height: 90px;
+  --color-gold: #FFD700;
+  --color-sidebarborder: #00FF00;
+  --color-sidebarlink: #252831;
 }
