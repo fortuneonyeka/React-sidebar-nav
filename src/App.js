@@ -2,10 +2,7 @@ import "./App.css";
 import Sidebar from "./components/Sidebar";
 import {Overview, Users, Ratings} from "./pages/overview/Overview";
 import Supports from "./pages/supports/Supports"
-import Reports from "./pages/Reports/Reports";
-import Report1 from "./pages/Reports/Report1"
-import Report2 from "./pages/Reports/Report2"
-import Report3 from "./pages/Reports/Report3"
+import {Reports,Report1,Report2,Report3} from "./pages/Reports/Reports";
 import Products from "./pages/products/Products";
 import Teams from "./pages/team/Team";
 import {Messages,Message1,Message2,Message3} from "./pages/messages/Messages";
