@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Overview = () => {
+export const Overview = () => {
   return (
     <div className="overview">
       <h1>Overview</h1>
@@ -8,4 +8,18 @@ const Overview = () => {
   )
 }
 
-export default Overview
+export const Ratings = () => {
+  return (
+    <div className="overview">
+      <h1>Ratings</h1>
+    </div>
+  )
+}
+
+export const Users = () => {
+  return (
+    <div className="overview">
+      <h1>Users</h1>
+    </div>
+  )
+}

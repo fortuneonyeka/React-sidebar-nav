@@ -1,7 +1,7 @@
 import "./App.css";
 import Sidebar from "./components/Sidebar";
-import Overview from "./pages/overview/Overview";
-import Users from "./pages/overview/Users";
+import {Overview, Users, Ratings} from "./pages/overview/Overview";
+
 import Reports from "./pages/Reports/Reports";
 import Report1 from "./pages/Reports/Report1"
 import Report2 from "./pages/Reports/Report2"
@@ -14,7 +14,7 @@ import Message2 from "./pages/messages/Message2";
 import Message3 from "./pages/messages/Message3";
 import Supports from "./pages/supports/Supports";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Ratings from "./pages/overview/Ratings";
+
 
 function App() {
   return (
