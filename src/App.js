@@ -2,7 +2,7 @@ import "./App.css";
 import Sidebar from "./components/Sidebar";
 import {Overview, Users, Ratings} from "./pages/overview/Overview";
 import Supports from "./pages/supports/Supports"
-import {Reports,Report1,Report2,Report3} from "./pages/Reports/Reports";
+import {Reports,ReportOne,ReportTwo,ReportThree} from "./pages/Reports/Reports";
 import Products from "./pages/products/Products";
 import Teams from "./pages/team/Team";
 import {Messages,Message1,Message2,Message3} from "./pages/messages/Messages";
@@ -18,9 +18,9 @@ function App() {
         <Route path="/overview/users" element={<Users/>}/>
         <Route path="/overview/ratings" element={<Ratings/>}/>
         <Route path="/reports" element={<Reports/>}/>
-        <Route path="/reports/reports1" element={<Report1/>}/>
-        <Route path="/reports/reports2" element={<Report2/>}/>
-        <Route path="/reports/reports3" element={<Report3/>}/>
+        <Route path="/reports/reports1" element={<ReportOne/>}/>
+        <Route path="/reports/reports2" element={<ReportTwo/>}/>
+        <Route path="/reports/reports3" element={<ReportThree/>}/>
         <Route path="/products" element={<Products/>}/>
         <Route path="/team" element={<Teams/>}/>
         <Route path="/messages" element={<Messages/>}/>
