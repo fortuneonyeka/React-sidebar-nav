@@ -1,18 +1,14 @@
 import "./App.css";
 import Sidebar from "./components/Sidebar";
 import {Overview, Users, Ratings} from "./pages/overview/Overview";
-
+import Supports from "./pages/supports/Supports"
 import Reports from "./pages/Reports/Reports";
 import Report1 from "./pages/Reports/Report1"
 import Report2 from "./pages/Reports/Report2"
 import Report3 from "./pages/Reports/Report3"
 import Products from "./pages/products/Products";
 import Teams from "./pages/team/Team";
-import Messages from "./pages/messages/Messages";
-import Message1 from "./pages/messages/Message1";
-import Message2 from "./pages/messages/Message2";
-import Message3 from "./pages/messages/Message3";
-import Supports from "./pages/supports/Supports";
+import {Messages,Message1,Message2,Message3} from "./pages/messages/Messages";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
